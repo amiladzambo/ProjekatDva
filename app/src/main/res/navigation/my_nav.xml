@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.projekatdva.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_dataList"
+            app:destination="@id/dataList" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataList"
+        android:name="com.example.projekatdva.DataList"
+        android:label="fragment_data_list"
+        tools:layout="@layout/fragment_data_list" >
+        <action
+            android:id="@+id/action_dataList_to_dataDetails"
+            app:destination="@id/dataDetails" />
+        <argument
+            android:name="house"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/dataDetails"
+        android:name="com.example.projekatdva.DataDetails"
+        android:label="fragment_data_details"
+        tools:layout="@layout/fragment_data_details"
+    >
+        <argument
+            android:name="character"
+            app:argType="com.example.projekatdva.model.StudentItem" />
+    </fragment>
+</navigation>
