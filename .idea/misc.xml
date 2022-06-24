@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/ProjekatDva/app/src/main/res/layout/activity_gallery.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ProjekatDva/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ProjekatDva/app/src/main/res/layout/data_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ProjekatDva/app/src/main/res/layout/fragment_data_details.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ProjekatDva/app/src/main/res/layout/fragment_data_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/ProjekatDva/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/ProjekatDva/app/src/main/res/layout/grid_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/ProjekatDva/app/src/main/res/menu/my_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
