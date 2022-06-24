@@ -13,4 +13,5 @@
     <string name="ravenclaw">Ravenclaw</string>
     <string name="gallery">Gallery</string>
     <string name="galleryI">Gallery</string>
+    <string name="send_as_message">Send as message</string>
 </resources>

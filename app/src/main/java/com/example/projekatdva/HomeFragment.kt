@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import com.example.projekatdva.database.StudentViewModel
 import com.example.projekatdva.databinding.FragmentHomeBinding
 import com.example.projekatdva.repository.Repository
 
@@ -17,6 +18,7 @@ import com.example.projekatdva.repository.Repository
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+    private lateinit var mStudentViewModel: StudentViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,6 +44,13 @@ class HomeFragment : Fragment() {
             val action = HomeFragmentDirections.actionHomeFragmentToDataList("ravenclaw");
             view.findNavController().navigate(action)
         }
+
+        mStudentViewModel = ViewModelProvider(this).get(StudentViewModel::class.java)
+        mStudentViewModel.readAllData.observe(viewLifecycleOwner, Observer { student ->
+            Log.i("STUD", student[0].name)
+            Log.i("STUDNET", student.size.toString())
+        })
+
         return view
     }
 }
