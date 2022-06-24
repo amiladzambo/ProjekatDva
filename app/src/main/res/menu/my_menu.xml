@@ -4,4 +4,8 @@
         android:id="@+id/gallery"
         android:title="@string/gallery"
         />
+    <item
+        android:id="@+id/database"
+        android:title="@string/my_database"
+        />
 </menu>

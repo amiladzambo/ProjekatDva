@@ -14,11 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjekatDva">
         <activity
+            android:name=".DatabaseList"
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.projekatdva.MainActivity" />
+        </activity>
+        <activity
             android:name=".GalleryActivity"
             android:exported="false">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.projekatdva.MainActivity" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.projekatdva.MainActivity" />
         </activity>
         <activity
             android:name=".MainActivity"

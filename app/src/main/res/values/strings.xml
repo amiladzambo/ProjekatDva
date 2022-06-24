@@ -14,4 +14,5 @@
     <string name="gallery">Gallery</string>
     <string name="galleryI">Gallery</string>
     <string name="send_as_message">Send as message</string>
+    <string name="my_database">My database</string>
 </resources>

@@ -42,7 +42,7 @@ class DataDetails : Fragment() {
         binding.ancestyValue.text = characterName.ancestry
 
         binding.saveDataButton.setOnClickListener {
-            Toast.makeText(context, "CLCIKED", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Added to database", Toast.LENGTH_SHORT).show()
             mStudentViewModel = ViewModelProvider(this).get(StudentViewModel::class.java)
             val name = characterName.name
             val house = characterName.house

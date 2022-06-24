@@ -42,6 +42,10 @@ class DataList : Fragment() {
                 val intent = Intent(context, GalleryActivity::class.java);
                 startActivity(intent);
             }
+            R.id.database -> {
+                val intent = Intent(context, DatabaseList::class.java);
+                startActivity(intent);
+            }
             else -> Toast.makeText(context, "Gallery", Toast.LENGTH_SHORT).show()
         }
         return super.onOptionsItemSelected(item)
