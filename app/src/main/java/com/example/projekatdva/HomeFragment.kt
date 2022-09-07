@@ -18,7 +18,6 @@ import com.example.projekatdva.repository.Repository
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private lateinit var mStudentViewModel: StudentViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -45,11 +44,6 @@ class HomeFragment : Fragment() {
             view.findNavController().navigate(action)
         }
 
-        mStudentViewModel = ViewModelProvider(this).get(StudentViewModel::class.java)
-        mStudentViewModel.readAllData.observe(viewLifecycleOwner, Observer { student ->
-            Log.i("STUD", student[0].name)
-            Log.i("STUDNET", student.size.toString())
-        })
 
         return view
     }
